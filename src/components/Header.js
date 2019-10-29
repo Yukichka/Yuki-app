@@ -5,15 +5,13 @@ export class Header extends React.Component {
   render() {
     return (
       <div className="header">
-        <div>
-          <Link to="/" className="header-title">
-            Yuki Inasawa
-          </Link>
-        </div>
+        <Link to="/" className="header-title">
+          Yuki Inasawa
+        </Link>
         <nav className="main-nav">
           <ul className="nav-list">
             <li className="nav-list-item">
-              <Link to="/portfolio" className="nav-link">
+              <Link to="/" className="nav-link">
                 Portfolio
               </Link>
             </li>

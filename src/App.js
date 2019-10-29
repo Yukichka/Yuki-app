@@ -3,7 +3,7 @@ import "./App.css";
 import { Home } from "./components/Home";
 import { About } from "./components/About";
 import { Contact } from "./components/Contact";
-import { Portfolio } from "./components/Portfolio";
+import { Project } from "./components/Project";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -15,11 +15,11 @@ function App() {
           <Route path="/about" exact>
             <About />
           </Route>
-          <Route path="/portfolio" exact>
-            <Portfolio />
-          </Route>
           <Route path="/contact" exact>
             <Contact />
+          </Route>
+          <Route path="/project/:projectName" exact>
+            <Project />
           </Route>
           <Route path="/" exact>
             <Home />

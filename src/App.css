@@ -1,7 +1,20 @@
+html {
+  background-color: #fdfdfd;
+}
 .app {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  letter-spacing: 1px; 
+  letter-spacing: 1px;
+  line-height: 2em;
+}
+.line {
+  display: block;
+  width: 30px;
+  height: 1px;
+  line-height: 0;
+  font-size: 0;
+  border-bottom: 1px solid #000;
+  margin: 0 auto;
 }
 /*-------------------header-------------------*/
 .header {
@@ -13,11 +26,19 @@
   z-index: 999;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin:1em 5em;
+  margin: 1em 20em;
 }
+@media (max-width: 1100px) {
+  .header {
+    margin: 2em;
+  }
+}
+
 .header-title {
   text-decoration: none;
+  font-size: 1.25em;
+  color: inherit;
+  text-transform: uppercase;
 }
 .nav-list {
   list-style: none;
@@ -33,7 +54,8 @@
   padding: calc(var(--spacing) / 2) var(--spacing);
   position: relative;
   letter-spacing: 1px;
-  font-size: 0.9em;
+  font-size: 1.15em;
+  color: inherit;
 }
 
 .nav-link:after {
@@ -56,17 +78,104 @@
   transform: scaleX(1);
 }
 /*-------------------home-------------------*/
-.home-content{
-  font-size: 1.2em;
-  width:450px;
-  margin: 5em 30em 0 15em;
-  text-align: left;
-  line-height: 1.25em;
+.home {
+  margin: 0 auto;
+  width: 1000px;
 }
-/*-------------------footer-------------------*/
-.footer{
-  font-size: 0.7em;
-  margin:6.25em;
+.home-content {
+  font-size: 1.25em;
+  width: 460px;
+  margin: 5em 0 3em 0;
+  text-align: left;
+}
+.home-projects {
   float: left;
 }
+.each-project {
+  margin: 0 0 4.15em 0;
+}
+.each-project-img {
+  width: 700px;
+  object-fit: cover;
+}
+.each-project-name {
+  margin: 0;
+  text-align: left;
+  font-size: 1.15em;
+  color: black;
+  /* text-decoration: none; */
+}
+.each-project-tech {
+  font-size: 1em;
+  margin: 0;
+  text-align: left;
+}
+
 /*-------------------footer-------------------*/
+.footer {
+  font-size: 0.9em;
+}
+.footer-link {
+  color: inherit;
+}
+/*-------------------about-------------------*/
+.about {
+  margin: 6em auto;
+  width: 1000px;
+  font-size: 1em;
+}
+.about-header {
+  font-size: 1.25em;
+  width: 550px;
+  text-align: left;
+  margin: 2em;
+}
+.skill {
+  text-transform: uppercase;
+}
+.skill-list {
+  list-style-type: none;
+  padding: 0;
+}
+.education {
+  text-transform: uppercase;
+}
+.education-list {
+  list-style-type: none;
+  padding: 0;
+}
+.grid-skill {
+  padding: 2.5em;
+}
+.grid-education {
+  padding: 2.5em;
+}
+
+/*-------------------project-------------------*/
+.project{
+  margin: 6em auto;
+  width: 1500px;
+  font-size: 1em;
+}
+.project-title{
+  font-weight: bold;
+}
+.project-url{
+  color:inherit;
+}
+.web-container {
+  flex-wrap: wrap;
+  margin:3em auto;
+  text-align: center;
+}
+.mobile-container {
+  flex-wrap: wrap;
+  margin:3em auto;
+  text-align: center;
+}
+.web-img {
+  margin: 1em;
+}
+.mobile-img {
+  margin: 1em;
+}
