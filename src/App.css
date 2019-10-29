@@ -1,6 +1,7 @@
 .app {
   margin: 0;
   font-family: "Poppins", sans-serif;
+  letter-spacing: 1px; 
 }
 /*-------------------header-------------------*/
 .header {
@@ -17,7 +18,6 @@
 }
 .header-title {
   text-decoration: none;
-  letter-spacing: 1px; 
 }
 .nav-list {
   list-style: none;
@@ -55,4 +55,18 @@
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-
+/*-------------------home-------------------*/
+.home-content{
+  font-size: 1.2em;
+  width:450px;
+  margin: 5em 30em 0 15em;
+  text-align: left;
+  line-height: 1.25em;
+}
+/*-------------------footer-------------------*/
+.footer{
+  font-size: 0.7em;
+  margin:6.25em;
+  float: left;
+}
+/*-------------------footer-------------------*/

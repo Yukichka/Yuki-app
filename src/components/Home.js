@@ -5,9 +5,13 @@ import { Footer } from "./Footer";
 export class Home extends React.Component {
   render() {
     return (
-      <div>
+      <div className="home">
         <Header />
-        <div></div>
+        <div className="home-content">
+          Hi, I'm Yuki, a self-taught developer. Welcome to my little portfolio
+          and creative space on the web. Please feel free to contact me for
+          freelance projects.
+        </div>
         <Footer />
       </div>
     );
