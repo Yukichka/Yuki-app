@@ -39,7 +39,7 @@ html {
   font-size: 1.25em;
   color: inherit;
   text-transform: uppercase;
-  margin: 0.75em 0;
+  margin: 0.5em 0;
 }
 @media (max-width: 500px) {
   .header {
