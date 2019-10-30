@@ -36,12 +36,14 @@ export class About extends React.Component {
               <li>Google Maps API</li>
               <li>Amazon Alexa skill</li>
               <li>Mongo DB</li>
+              <li>Express</li>
+              <li>Heroku</li>
             </ul>
           </Grid>
           <Grid item xs={12} sm={6} className="grid-education">
             <div className="education">Education →</div>
             <ul className="education-list">
-              <li>Juntendo University, Japan</li>
+              <li>Juntendo University, Tokyo</li>
               <li>(Bachelor of Nursing)</li>
               <li>Udacity, London</li>
               <li>(Google Developer Scholarship)</li>
