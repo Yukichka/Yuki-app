@@ -20,11 +20,11 @@ export class Header extends React.Component {
                 About
               </Link>
             </li>
-            <li className="nav-list-item">
+            {/* <li className="nav-list-item">
               <Link to="/contact" className="nav-link">
                 Contact
               </Link>
-            </li>
+            </li> */}
             <li className="nav-list-item">
               <a href="#" className="nav-link">
                 Search

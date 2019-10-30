@@ -50,10 +50,45 @@ export class About extends React.Component {
               <li>Udemy, London</li>
               <li>(React)</li>
             </ul>
+            <div className="contact-me">Reach me →</div>
+            <ul className="contact-me-list">
+              <li>
+                <a
+                  href="https://github.com/Yukichka"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact-me-link"
+                >
+                  Githab
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/yuki-inasawa-23175516a/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact-me-link"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/ukinnn/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact-me-link"
+                >
+                  Instagram
+                </a>
+              </li>
+            </ul>
           </Grid>
         </Grid>
-        <br/>
-        <Footer />
+        <br />
+        <div className="about-footer">
+          <Footer />
+        </div>
       </div>
     );
   }

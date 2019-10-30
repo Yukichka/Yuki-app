@@ -44,7 +44,9 @@ export class Home extends React.Component {
             </div>
           ))}
         </div>
+        <div className="home-footer">
         <Footer />
+        </div>
       </div>
     );
   }

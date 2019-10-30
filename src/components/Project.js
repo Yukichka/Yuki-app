@@ -3,24 +3,42 @@ import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { allProjects } from "./Dataset";
 import { useParams } from "react-router-dom";
-import Grid from "@material-ui/core/Grid";
+import { Link } from "react-router-dom";
 
 export function Project() {
   let { projectName } = useParams();
   const projectInfo = allProjects.find(project => project.name === projectName);
-  console.log(projectInfo);
+  // console.log(projectInfo);
 
   return (
     <div className="project">
       <Header />
-      <div className="project-title">{`${projectInfo.name}`}</div>
-      <div>Tech:{`${projectInfo.tech}`}</div>
-      <div>Style:{`${projectInfo.style}`}</div>
-      <div>URL:<a href={`${projectInfo.url}`} target="_blank" className="project-url">{`${projectInfo.url}`}</a></div>
-      <a href={`${projectInfo.github}`} target="_blank">
-        <img src="/imgs/github.png" alt=""/>
-      </a>
-
+      <div className="project-content">
+        <div className="project-title">{`${projectInfo.name}`}</div>
+        <div>Tech:{`${projectInfo.tech}`}</div>
+        <div>Style:{`${projectInfo.style}`}</div>
+        <div>
+          URL:
+          <a
+            href={`${projectInfo.url}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-url"
+          >{`${projectInfo.url}`}</a>
+        </div>
+        <a
+          href={`${projectInfo.github}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="/imgs/github.png" alt="" />
+        </a>
+        <div>
+          <Link to="/" className="back-link">
+            ← Back
+          </Link>
+        </div>
+      </div>
       <div className="web-container">
         <div>Web</div>
         <p class="line">&nbsp;</p>
@@ -51,7 +69,9 @@ export function Project() {
           />
         </div>
       </div>
+      <div className="project-footer">
       <Footer />
+  </div>
     </div>
   );
 }
