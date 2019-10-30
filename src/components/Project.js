@@ -41,7 +41,7 @@ export function Project() {
       </div>
       <div className="web-container">
         <div>Web</div>
-        <p class="line">&nbsp;</p>
+        <p className="line">&nbsp;</p>
         <div className="web-img-container">
           <img src={`${projectInfo.img.web[0]}`} alt="" className="web-img" />
           <img src={`${projectInfo.img.web[1]}`} alt="" className="web-img" />
@@ -69,9 +69,7 @@ export function Project() {
           />
         </div>
       </div>
-      <div className="project-footer">
-      <Footer />
-  </div>
+        <Footer />
     </div>
   );
 }

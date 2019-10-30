@@ -26,9 +26,9 @@ export class Header extends React.Component {
               </Link>
             </li> */}
             <li className="nav-list-item">
-              <a href="#" className="nav-link">
+              <Link to="/search" className="nav-link">
                 Search
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

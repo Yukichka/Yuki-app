@@ -1,14 +1,12 @@
 export const allProjects = [
   {
-    img: { web: ["/imgs/yuki-web-demo.png"], mobile: ["/imgs/yuki-web-demo.png"] },
+    img: { web: ["/imgs/yuki-web-demo.png"], mobile: ["/imgs/yuki-mobile-demo.png","/imgs/yuki-mobile-demo-2.png"] },
     name: "yuki-app",
     url: "https://github.com/Yukichka/Yuki-app",
     github: "https://github.com/Yukichka/Yuki-app",
     tech: [
       "JavaScript",
       "React",
-      "HTML",
-      "CSS",
       "create-react-app",
       "react-router",
       "Material-UI"
@@ -36,8 +34,6 @@ export const allProjects = [
     tech: [
       "JavaScript",
       "React",
-      "HTML",
-      "CSS",
       "create-react-app",
       "react-router",
       "Material-UI"
@@ -46,8 +42,8 @@ export const allProjects = [
   },
   {
     img: {
-      web: ["/imgs/travel-web.png"],
-      mobile: ["/imgs/travel-mobile.png", "/imgs/travel-mobile-2.png"]
+      web: ["/imgs/travel-web.png","/imgs/travel-web-2.png"],
+      mobile: ["/imgs/travel-mobile-2.png", "/imgs/travel-mobile-3.png","/imgs/travel-mobile.png"]
     },
     name: "TravelPictureApp",
     url: "https://yukichka.github.io",
@@ -55,8 +51,6 @@ export const allProjects = [
     tech: [
       "JavaScript",
       "React",
-      "HTML",
-      "CSS",
       "create-react-app",
       "react-router",
       "reactstrap",
