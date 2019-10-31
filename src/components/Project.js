@@ -43,33 +43,23 @@ export function Project() {
         <div>Web</div>
         <p className="line">&nbsp;</p>
         <div className="web-img-container">
-          <img src={`${projectInfo.img.web[0]}`} alt="" className="web-img" />
-          <img src={`${projectInfo.img.web[1]}`} alt="" className="web-img" />
-          <img src={`${projectInfo.img.web[2]}`} alt="" className="web-img" />
+          {projectInfo.img.web.map((img, idx) => (
+            <img src={img} alt="" className="web-img" key={idx} />
+          ))}
         </div>
       </div>
       <div className="mobile-container">
         <div>Mobile</div>
-        <p class="line">&nbsp;</p>
+        <p className="line">&nbsp;</p>
         <div className="mobile-img-container">
-          <img
-            src={`${projectInfo.img.mobile[0]}`}
-            alt=""
-            className="mobile-img"
-          />
-          <img
-            src={`${projectInfo.img.mobile[1]}`}
-            alt=""
-            className="mobile-img"
-          />
-          <img
-            src={`${projectInfo.img.mobile[2]}`}
-            alt=""
-            className="mobile-img"
-          />
+          {projectInfo.img.mobile.map((img, idx) => (
+            <img src={img} alt="" className="mobile-img" key={idx} />
+          ))}
         </div>
       </div>
+      <div className="project-footer">
         <Footer />
+      </div>
     </div>
   );
 }

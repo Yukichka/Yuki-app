@@ -15,9 +15,9 @@ export class About extends React.Component {
         </div>
 
         <Grid container spacing={0}>
-          <Grid item xs={12} sm={6} className="grid-skill">
-            <div className="skill">Skills →</div>
-            <ul className="skill-list">
+          <Grid item xs={12} sm={6} className="about-grid">
+            <div className="about-title">Skills →</div>
+            <ul className="about-list">
               <li>HTML5</li>
               <li>CSS3</li>
               <li>JavaScript</li>
@@ -40,9 +40,9 @@ export class About extends React.Component {
               <li>Heroku</li>
             </ul>
           </Grid>
-          <Grid item xs={12} sm={6} className="grid-education">
-            <div className="education">Education →</div>
-            <ul className="education-list">
+          <Grid item xs={12} sm={6} className="about-grid">
+            <div className="about-title">Education →</div>
+            <ul className="about-list">
               <li>Juntendo University, Tokyo</li>
               <li>(Bachelor of Nursing)</li>
               <li>Udacity, London</li>

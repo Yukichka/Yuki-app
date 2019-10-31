@@ -37,7 +37,6 @@ export class Home extends React.Component {
                   />
                   <br />
                   <div className="each-project-name">{`${project.name}`}</div>
-                  {/* <div className="project-url">{`${project.url}`}</div> */}
                 </div>
               </Link>
               <div className="each-project-tech">Tech:{`${project.tech}`}</div>

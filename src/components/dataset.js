@@ -2,7 +2,7 @@ export const allProjects = [
   {
     img: { web: ["/imgs/yuki-web-demo.png"], mobile: ["/imgs/yuki-mobile-demo.png","/imgs/yuki-mobile-demo-2.png"] },
     name: "yuki-app",
-    url: "https://github.com/Yukichka/Yuki-app",
+    url: "https://www.yukiinasawa.me",
     github: "https://github.com/Yukichka/Yuki-app",
     tech: [
       "JavaScript",
@@ -29,7 +29,7 @@ export const allProjects = [
       ]
     },
     name: "vicky-app",
-    url: "https://github.com/Yukichka/Vicky-app",
+    url: "https://vicky-app-temp.herokuapp.com",
     github: "https://github.com/Yukichka/Vicky-app",
     tech: [
       "JavaScript",
