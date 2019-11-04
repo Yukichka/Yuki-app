@@ -61,7 +61,7 @@ export class About extends React.Component {
                   rel="noopener noreferrer"
                   className="contact-me-link"
                 >
-                  Githab
+                  GitHub
                 </a>
               </li>
               <li>
