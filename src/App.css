@@ -322,7 +322,7 @@ html {
 /*-------------------search-------------------*/
 .search {
   text-align: center;
-  margin: 15em auto;
+  margin: 12.5em auto;
 }
 .search-msg {
   padding-bottom: 2em;
@@ -335,7 +335,7 @@ html {
 /*-------------------mobile-menu-------------------*/
 .mobile-menu{
   text-align: center;
-  margin: 10em auto;
+  margin: 9.5em auto;
   line-height: 4em;
 }
 #mobilenav{

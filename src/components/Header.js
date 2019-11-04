@@ -49,11 +49,11 @@ export class Header extends React.Component {
             &times;
           </div>
           <div className="mobile-menu">
-            <Link to="/">Portfolio</Link>
+            <Link to="/" onClick={this.closeNav}>Portfolio</Link>
             <p className="line">&nbsp;</p>
-            <Link to="/about">About</Link>
+            <Link to="/about" onClick={this.closeNav}>About</Link>
             <p className="line">&nbsp;</p>
-            <Link to="/search">Search</Link>
+            <Link to="/search" onClick={this.closeNav}>Search</Link>
           </div>
         </div>
       </div>
