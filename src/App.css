@@ -17,19 +17,19 @@ html {
   margin: 0 auto;
 }
 /*-------------------header-------------------*/
-.header {
+#main {
   background: transparent;
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
+  left:0;
   z-index: 999;
   display: flex;
   justify-content: space-between;
   margin: 1em 10em;
 }
 @media (max-width: 1500px) {
-  .header {
+  #main{
     margin: 1em 2.25em ;
   }
 }
@@ -322,7 +322,7 @@ html {
 /*-------------------search-------------------*/
 .search {
   text-align: center;
-  margin: 20em auto;
+  margin: 15em auto;
 }
 .search-msg {
   padding-bottom: 2em;
@@ -331,4 +331,43 @@ html {
   font-size: 0.75em;
   text-decoration: none;
   color: inherit;
+}
+/*-------------------mobile-menu-------------------*/
+.mobile-menu{
+  text-align: center;
+  margin: 10em auto;
+  line-height: 4em;
+}
+#mobilenav{
+  height: 100%;
+  width:0;
+  position: fixed;
+  overflow-x: hidden;
+  transition: 0.3s;
+  z-index: 999;
+  top: 0;
+  right:0;
+  background-color:#fdfdfd;
+}
+#mobilenav a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: 0.3s;
+}
+.closebtn {
+  text-align: right;
+  margin: 1.25em 2.5em;
+} 
+.openbtn{
+  display: none;
+  overflow-x: hidden;
+}
+@media (max-width: 500px) {
+  .openbtn{
+    display: block;
+    cursor:pointer;
+    width:1em;
+    margin:0.25em ;
+  }
 }

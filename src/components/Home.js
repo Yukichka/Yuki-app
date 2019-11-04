@@ -4,13 +4,14 @@ import { Footer } from "./Footer";
 import { allProjects } from "./Dataset";
 import { Link } from "react-router-dom";
 
+
 export class Home extends React.Component {
   constructor(props) {
     super(props);
     this.getProjectInfo = this.getProjectInfo.bind(this);
   }
   getProjectInfo(project) {
-    const clickedProject = project.name
+    const clickedProject = project.name;
     // console.log(clickedProject);
   }
   render() {
@@ -44,7 +45,7 @@ export class Home extends React.Component {
           ))}
         </div>
         <div className="home-footer">
-        <Footer />
+          <Footer />
         </div>
       </div>
     );
