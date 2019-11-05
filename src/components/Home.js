@@ -9,10 +9,12 @@ export class Home extends React.Component {
   constructor(props) {
     super(props);
     this.getProjectInfo = this.getProjectInfo.bind(this);
+    this.state = {project:""}
   }
+
   getProjectInfo(project) {
     const clickedProject = project.name;
-    // console.log(clickedProject);
+    this.setState({project:clickedProject})
   }
   render() {
     return (
