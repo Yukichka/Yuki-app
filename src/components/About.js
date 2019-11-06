@@ -66,7 +66,7 @@ export class About extends React.Component {
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/yuki-inasawa-23175516a/"
+                  href="https://www.linkedin.com/in/yuki-inasawa"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="contact-me-link"
