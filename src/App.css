@@ -8,11 +8,11 @@ html {
   line-height: 2em;
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .app{
     font-size: 0.75em;
   }
-}
+} */
 
 .line {
   display: block;
@@ -100,14 +100,13 @@ html {
 /*-------------------home-------------------*/
 .home {
   margin: 6em auto;
-  width: 1000px;
-  font-size: 1em;
+  width: 700px;
+  text-align: center;
 }
 .home-content {
   width: 460px;
   margin: 5em 2em 3em 2em;
   text-align: left;
-  font-size:1.05em
 }
 .each-project {
   margin: 0 2em 4.15em 2em;
@@ -120,45 +119,16 @@ html {
   margin: 0;
   text-align: left;
   color: black;
+  text-decoration: none;
 }
 
 .each-project-tech {
-  font-size: 1em;
   margin: 0;
   text-align: left;
 }
 .home-footer {
   margin: 0 2em;
 }
-@media (max-width: 500px) {
-  .home {
-    margin: 7em auto;
-    width: 300px;
-  }
-  .each-project {
-    margin: 0 0 4.15em 0;
-  }
-  .each-project-img {
-    object-fit: cover;
-    width: 300px;
-  }
-  .each-project-name {
-    font-size: 1em;
-  }
-  .each-project-tech {
-    font-size: 0.75em;
-  }
-  .home-content {
-    width: 300px;
-    font-size: 1em;
-    margin: 1.25em 0;
-  }
-  .home-footer {
-    margin: 0;
-    font-size: 0.9em;
-  }
-}
-
 @media (max-width: 1000px) {
   .home {
     margin: 7em auto;
@@ -170,10 +140,33 @@ html {
   }
   .home-content {
     width: 350px;
-    font-size: 1em;
     margin: 1.25em 1.50em;
   }
 }
+@media (max-width: 500px) {
+  .home {
+    margin: 7em auto;
+    width: 300px;
+  }
+  .each-project {
+    margin: 0 0 4.15em 0;
+    font-size: 0.75em;
+  }
+  .each-project-img {
+    object-fit: cover;
+    width: 300px;
+  }
+
+  .home-content {
+    width: 300px;
+    margin: 1.25em 0;
+  }
+  .home-footer {
+    margin: 0;
+  }
+}
+
+
 /*-------------------footer-------------------*/
 .footer {
   font-size: 0.9em;

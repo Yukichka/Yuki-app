@@ -1,6 +1,9 @@
 export const allProjects = [
   {
-    img: { web: ["/imgs/yuki-web-demo.png"], mobile: ["/imgs/yuki-mobile-demo.png","/imgs/yuki-mobile-demo-2.png"] },
+    img: {
+      web: ["/imgs/yuki-web-demo.png"],
+      mobile: ["/imgs/yuki-mobile-demo.png"]
+    },
     name: "yuki-app",
     url: "https://www.yukiinasawa.me",
     github: "https://github.com/Yukichka/Yuki-app",
@@ -42,8 +45,12 @@ export const allProjects = [
   },
   {
     img: {
-      web: ["/imgs/travel-web.png","/imgs/travel-web-2.png"],
-      mobile: ["/imgs/travel-mobile-2.png", "/imgs/travel-mobile-3.png","/imgs/travel-mobile.png"]
+      web: ["/imgs/travel-web.png", "/imgs/travel-web-2.png"],
+      mobile: [
+        "/imgs/travel-mobile-2.png",
+        "/imgs/travel-mobile-3.png",
+        "/imgs/travel-mobile.png"
+      ]
     },
     name: "TravelPictureApp",
     url: "https://yukichka.github.io",
