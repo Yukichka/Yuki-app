@@ -101,6 +101,7 @@ html {
   width: 460px;
   margin: 5em 2em 3em 2em;
   text-align: left;
+  font-size: 1.05em;
 }
 .each-project {
   margin: 0 2em 4.15em 2em;
@@ -171,7 +172,7 @@ html {
 /*-------------------about-------------------*/
 .about {
   margin: 6em auto;
-  width: 1000px;
+  width: 700px;
   font-size: 1em;
 }
 .about-header {
