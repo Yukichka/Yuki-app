@@ -15,4 +15,4 @@ Author: [Yuki](https://github.com/Yukichka)
 
 LinkedIn:[Yuki Inasawa](https://www.linkedin.com/in/yuki-inasawa)
 
-Github respository: [Yukichka/TravelPictureApp](https://github.com/Yukichka/TravelPictureApp)
+Github respository: [Yukichka/Yuki-app](https://github.com/Yukichka/Yuki-app)
