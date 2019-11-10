@@ -106,7 +106,7 @@ html {
   margin: 0 2em 4.15em 2em;
 }
 .each-project-img {
-  width: 700px;
+  width: 650px;
   object-fit: cover;
 }
 .each-project-name {
@@ -324,7 +324,7 @@ html {
 .mobile-menu{
   text-align: center;
   line-height: 4em;
-  padding-top: 4em;
+  padding-top: 4.75em;
 }
 #mobilenav{
   height: 100%;
