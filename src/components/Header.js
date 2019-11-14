@@ -1,11 +1,49 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Search } from "./Search";
+import { withRouter } from "react-router";
 
-export class Header extends React.Component {
+// browserHistory.listen( location =>  {
+//   //Do your stuff here
+//   console.log(location)
+//  });
+
+class HeaderImpl extends React.Component {
   constructor(props) {
     super(props);
-    this.openNav = this.openNav.bind(this);
-    this.closeNav = this.closeNav.bind(this);
+    this.state = { isSearchOpen: false };
+    // this.openNav = this.openNav.bind(this);
+    // this.closeNav = this.closeNav.bind(this);
+    this.openSearch = this.openSearch.bind(this);
+    this.closeSearch = this.closeSearch.bind(this);
+  }
+  componentWillMount() {
+    this.unlisten = this.props.history.listen((location, action) => {
+      this.closeSearch();
+      this.closeMobileSearch();
+      this.closeNav();
+      console.log("You changed the page to: ", location.pathname);
+    });
+  }
+  componentWillUnmount() {
+    this.unlisten();
+  }
+
+  openSearch(event) {
+    document.getElementById("open-search").style.width = "12.5%";
+    this.setState({ isSearchOpen: true });
+    event.preventDefault();
+  }
+  closeSearch() {
+    document.getElementById("open-search").style.width = "0";
+    this.setState({ isSearchOpen: false });
+  }
+  openMobileSearch(event) {
+    document.getElementById("mobile-search").style.display = "inline-block";
+    event.preventDefault();
+  }
+  closeMobileSearch() {
+    document.getElementById("mobile-search").style.display = "none";
   }
 
   openNav() {
@@ -34,11 +72,20 @@ export class Header extends React.Component {
                 </Link>
               </li>
               <li className="nav-list-item">
-                <Link to="/search" className="nav-link">
-                  Search
-                </Link>
+                {this.state.isSearchOpen ? (
+                  <Link className="nav-link" onClick={this.closeSearch}>
+                    Search
+                  </Link>
+                ) : (
+                  <Link className="nav-link" onClick={this.openSearch}>
+                    Search
+                  </Link>
+                )}
               </li>
             </ul>
+          </div>
+          <div id="open-search">
+            <Search />
           </div>
           <div className="openbtn" onClick={this.openNav}>
             &#9776;
@@ -49,14 +96,23 @@ export class Header extends React.Component {
             &times;
           </div>
           <div className="mobile-menu">
-            <Link to="/" onClick={this.closeNav}>Portfolio</Link>
+            <Link to="/" onClick={this.closeNav}>
+              Portfolio
+            </Link>
             <p className="line">&nbsp;</p>
-            <Link to="/about" onClick={this.closeNav}>About</Link>
+            <Link to="/about" onClick={this.closeNav}>
+              About
+            </Link>
             <p className="line">&nbsp;</p>
-            <Link to="/search" onClick={this.closeNav}>Search</Link>
+            <Link onClick={this.openMobileSearch}>Search</Link>
+          </div>
+          <div id="mobile-search">
+            <Search />
           </div>
         </div>
       </div>
     );
   }
 }
+
+export const Header = withRouter(HeaderImpl);

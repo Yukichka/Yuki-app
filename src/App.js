@@ -7,6 +7,7 @@ import { Project } from "./components/Project";
 import { Search } from "./components/Search";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { SearchedProject } from "./components/SearchedProject";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route path="/project/:projectName" exact>
             <Project />
+          </Route>
+          <Route path="/:el" exact>
+            <SearchedProject />
           </Route>
           <Route path="/" exact>
             <Home />
