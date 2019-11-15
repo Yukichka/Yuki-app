@@ -227,7 +227,7 @@ html {
   color: inherit;
 }
 .contact-me-link:hover {
-  background-color: #d2ffe3;
+  background-color:  #E8FFF1;
 }
 .about-grid {
   padding: 1em 2.5em;
@@ -401,7 +401,7 @@ html {
   box-sizing: border-box;
   border: none;
   border-bottom: 1px solid black;
-  background-color: #d2ffe3;
+  background-color:  #E8FFF1;
 }
 .link-list {
   color: inherit;
