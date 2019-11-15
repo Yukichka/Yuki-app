@@ -42,6 +42,7 @@ class HeaderImpl extends React.Component {
     document.getElementById("mobile-search").style.display = "inline-block";
     event.preventDefault();
   }
+
   closeMobileSearch() {
     document.getElementById("mobile-search").style.display = "none";
   }
@@ -73,11 +74,11 @@ class HeaderImpl extends React.Component {
               </li>
               <li className="nav-list-item">
                 {this.state.isSearchOpen ? (
-                  <Link className="nav-link" onClick={this.closeSearch}>
+                  <Link to="" className="nav-link" onClick={this.closeSearch}>
                     Search
                   </Link>
                 ) : (
-                  <Link className="nav-link" onClick={this.openSearch}>
+                  <Link to="" className="nav-link" onClick={this.openSearch}>
                     Search
                   </Link>
                 )}
@@ -104,7 +105,9 @@ class HeaderImpl extends React.Component {
               About
             </Link>
             <p className="line">&nbsp;</p>
-            <Link onClick={this.openMobileSearch}>Search</Link>
+            <Link to="" onClick={this.openMobileSearch}>
+              Search
+            </Link>
           </div>
           <div id="mobile-search">
             <Search />

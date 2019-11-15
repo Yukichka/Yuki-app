@@ -27,7 +27,7 @@ export function SearchedProject() {
       </div><p className="line">&nbsp;</p>
       <ul className="filtered-list">
         {filteredProject.map((project, idx) => (
-          <Link to={`/project/${project.name}`} className="filtered-link">
+          <Link to={`/project/${project.name}`} className="filtered-link" key={idx}>
             <li>{project.name}</li>
           </Link>
         ))}
