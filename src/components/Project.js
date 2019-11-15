@@ -40,7 +40,7 @@ export function Project() {
         </div>
       </div>
       <div className="web-container">
-        <div>Web</div>
+        <div>Web Image</div>
         <p className="line">&nbsp;</p>
         <div className="web-img-container">
           {projectInfo.img.web.map((img, idx) => (
@@ -49,7 +49,7 @@ export function Project() {
         </div>
       </div>
       <div className="mobile-container">
-        <div>Mobile</div>
+        <div>Mobile Image</div>
         <p className="line">&nbsp;</p>
         <div className="mobile-img-container">
           {projectInfo.img.mobile.map((img, idx) => (

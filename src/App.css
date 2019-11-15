@@ -294,10 +294,9 @@ html {
 }
 @media (max-width: 500px) {
   .project-content {
-    width: 100%;
+    width: 80%;
     font-size: 0.9em;
-    text-align: left;
-    margin: 1em;
+    margin: 0 2.75em;
   }
 }
 @media (max-width: 500px) {
