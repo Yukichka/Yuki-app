@@ -177,6 +177,11 @@ html {
 }
 .footer-link {
   color: inherit;
+  text-decoration: none;
+}
+.footer-link span{
+text-decoration: underline;
+text-underline-position: under;
 }
 /*-------------------about-------------------*/
 .about {
