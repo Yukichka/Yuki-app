@@ -8,6 +8,8 @@ export const allProjects = [
     url: "https://www.yukiinasawa.me",
     github: "https://github.com/Yukichka/Yuki-app",
     tech: [
+      "HTML",
+      "CSS",
       "JavaScript",
       "React",
       "create-react-app",
@@ -35,6 +37,8 @@ export const allProjects = [
     url: "https://vicky-app-temp.herokuapp.com",
     github: "https://github.com/Yukichka?tab=repositories",
     tech: [
+      "HTML",
+      "CSS",
       "JavaScript",
       "React",
       "create-react-app",
@@ -56,6 +60,8 @@ export const allProjects = [
     url: "https://yukichka.github.io",
     github: "https://github.com/Yukichka/TravelPictureApp",
     tech: [
+      "HTML",
+      "CSS",
       "JavaScript",
       "React",
       "create-react-app",

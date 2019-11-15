@@ -65,7 +65,7 @@ export class Search extends React.Component {
         <Link to="/" className="search-back">Back to Top</Link> */}
         <form className="search-form">
           <input
-            placeholder="Search by tech..."
+            placeholder="Search by tech ..."
             ref={input => (this.search = input)}
             onChange={this.handleInputChange}
             className="search-input"

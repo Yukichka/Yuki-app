@@ -400,6 +400,7 @@ html {
   padding: 10px 20px;
   box-sizing: border-box;
   border: none;
+  border-radius: 0;
   border-bottom: 1px solid black;
   background-color:  #E8FFF1;
 }
