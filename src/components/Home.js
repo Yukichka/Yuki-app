@@ -28,7 +28,7 @@ export class Home extends React.Component {
         <div className="home-projects">
           {allProjects.map((project, idx) => (
             <div className="each-project" key={idx}>
-              <Link to={`/project/${project.name}`}>
+              <Link to={`/project/${project.name}`} className="link-project">
                 <div
                   className="each-project-link"
                   onClick={() => this.getProjectInfo(project)}
