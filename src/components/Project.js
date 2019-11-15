@@ -26,13 +26,17 @@ export function Project() {
             className="project-url"
           >{`${projectInfo.url}`}</a>
         </div>
-        <a
-          href={`${projectInfo.github}`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="/imgs/github.png" alt="" />
-        </a>
+        {`${projectInfo.github}` != "" ? (
+          <a
+            href={`${projectInfo.github}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/imgs/github.png" alt="" />
+          </a>
+        ) : (
+          <div />
+        )}
         <div>
           <Link to="/" className="back-link">
             ← Back

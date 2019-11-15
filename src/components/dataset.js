@@ -35,7 +35,7 @@ export const allProjects = [
     },
     name: "vicky-app",
     url: "https://vicky-app-temp.herokuapp.com",
-    github: "https://github.com/Yukichka?tab=repositories",
+    github: "",
     tech: [
       "HTML",
       "CSS",
