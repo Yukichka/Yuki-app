@@ -38,6 +38,7 @@ export class About extends React.Component {
               <li>Mongo DB</li>
               <li>Express</li>
               <li>Heroku</li>
+              <li>Firebase</li>
             </ul>
           </Grid>
           <Grid item xs={12} sm={6} className="about-grid">
