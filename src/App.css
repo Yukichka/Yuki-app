@@ -412,6 +412,7 @@ html {
   border-radius: 0;
   border-bottom: 1px solid black;
   background-color: #e8fff1;
+  outline: none;
 }
 .link-list {
   color: inherit;
