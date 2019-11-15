@@ -12,8 +12,8 @@ class HeaderImpl extends React.Component {
   constructor(props) {
     super(props);
     this.state = { isSearchOpen: false };
-    // this.openNav = this.openNav.bind(this);
-    // this.closeNav = this.closeNav.bind(this);
+    this.openNav = this.openNav.bind(this);
+    this.closeNav = this.closeNav.bind(this);
     this.openSearch = this.openSearch.bind(this);
     this.closeSearch = this.closeSearch.bind(this);
   }
@@ -30,7 +30,7 @@ class HeaderImpl extends React.Component {
   }
 
   openSearch(event) {
-    document.getElementById("open-search").style.width = "12.5%";
+    document.getElementById("open-search").style.width = "180px"; 
     this.setState({ isSearchOpen: true });
     event.preventDefault();
   }
@@ -42,11 +42,9 @@ class HeaderImpl extends React.Component {
     document.getElementById("mobile-search").style.display = "inline-block";
     event.preventDefault();
   }
-
   closeMobileSearch() {
     document.getElementById("mobile-search").style.display = "none";
   }
-
   openNav() {
     document.getElementById("mobilenav").style.width = "100%";
   }

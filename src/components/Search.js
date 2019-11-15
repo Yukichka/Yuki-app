@@ -1,7 +1,6 @@
 import React from "react";
 import { allProjects } from "./Dataset";
 import { Suggestions } from "./Suggestions";
-import { Link } from "react-router-dom";
 
 export class Search extends React.Component {
   constructor(props) {

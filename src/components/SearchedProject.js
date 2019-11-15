@@ -1,6 +1,5 @@
 import React from "react";
 import { Header } from "./Header";
-import { Footer } from "./Footer";
 import { allProjects } from "./Dataset";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
