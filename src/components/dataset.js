@@ -84,10 +84,10 @@ export const allProjects = [
       "JavaScript",
       "React",
       "create-react-app",
-      "react-router",
       "reactstrap",
       "Bootstrap",
-      "GoogleMapsAPI"
+      "GoogleMapsAPI",
+      "react-router"
     ],
     style: ["Website"]
   }
