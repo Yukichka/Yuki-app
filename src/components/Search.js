@@ -9,6 +9,7 @@ export class Search extends React.Component {
       query: "",
       results: []
     };
+    this.deleteInput = this.deleteInput.bind(this);
   }
 
   getInfo = inputStr => {
@@ -54,14 +55,14 @@ export class Search extends React.Component {
       }
     );
   };
+  deleteInput = () => {
+    this.setState({ results: [] });
+    return (this.search.value = "");
+  };
+
   render() {
     return (
       <div className="search">
-        {/* <Header/> */}
-        {/* <div className="search-msg">Not just yet</div>
-        <p className="line">&nbsp;</p>
-        <br/>
-        <Link to="/" className="search-back">Back to Top</Link> */}
         <form className="search-form">
           <input
             placeholder="Search by tech stack..."
@@ -69,9 +70,12 @@ export class Search extends React.Component {
             onChange={this.handleInputChange}
             className="search-input"
           />
-          <Suggestions results={this.state.results} className="search-results"/>
+          <Suggestions
+            results={this.state.results}
+            className="search-results"
+            onDelete={() => this.deleteInput(this.state.query)}
+          />
         </form>
-        {/* <Footer/> */}
       </div>
     );
   }

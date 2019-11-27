@@ -9,30 +9,31 @@ import { Search } from "./components/Search";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { SearchedProject } from "./components/SearchedProject";
 
-function App() {
-  return (
-    <div className="app">
-      <Router>
-        <Switch>
-          <Route path="/about" exact>
-            <About />
-          </Route>
-          <Route path="/search" exact>
-            <Search />
-          </Route>
-          <Route path="/project/:projectName" exact>
-            <Project />
-          </Route>
-          <Route path="/:el" exact>
-            <SearchedProject />
-          </Route>
-          <Route path="/" exact>
-            <Home />
-          </Route>
-        </Switch>
-      </Router>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="app">
+        <Router>
+          <Switch>
+            <Route path="/about" exact>
+              <About />
+            </Route>
+            <Route path="/search" exact>
+              <Search />
+            </Route>
+            <Route path="/project/:projectName" exact>
+              <Project />
+            </Route>
+            <Route path="/:el" exact>
+              <SearchedProject />
+            </Route>
+            <Route path="/" exact>
+              <Home />
+            </Route>
+          </Switch>
+        </Router>
+      </div>
+    );
+  }
 }
-
 export default App;

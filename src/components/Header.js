@@ -12,6 +12,7 @@ class HeaderImpl extends React.Component {
   constructor(props) {
     super(props);
     this.state = { isSearchOpen: false };
+    this.state = { inputValue: "" };
     this.openNav = this.openNav.bind(this);
     this.closeNav = this.closeNav.bind(this);
     this.openSearch = this.openSearch.bind(this);
@@ -30,7 +31,7 @@ class HeaderImpl extends React.Component {
   }
 
   openSearch(event) {
-    document.getElementById("open-search").style.width = "180px"; 
+    document.getElementById("open-search").style.width = "180px";
     this.setState({ isSearchOpen: true });
     event.preventDefault();
   }
@@ -103,9 +104,7 @@ class HeaderImpl extends React.Component {
               About
             </Link>
             <p className="line">&nbsp;</p>
-            <div onClick={this.openMobileSearch}>
-              Search
-            </div>
+            <div onClick={this.openMobileSearch}>Search</div>
           </div>
           <div id="mobile-search">
             <Search />

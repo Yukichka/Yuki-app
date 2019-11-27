@@ -11,8 +11,13 @@ export class Suggestions extends React.Component {
   // }
 
   render() {
-    const options = this.props.results.map((el,idx) => (
-      <Link to={`/${el}`} key={idx} className="link-list">
+    const options = this.props.results.map((el, idx) => (
+      <Link
+        to={`/${el}`}
+        key={idx}
+        className="link-list"
+        onClick={this.props.onDelete}
+      >
         <li>{el}</li>
       </Link>
     ));
@@ -24,4 +29,3 @@ export class Suggestions extends React.Component {
     );
   }
 }
-
