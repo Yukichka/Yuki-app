@@ -23,17 +23,20 @@ export function SearchedProject() {
       <Header />
       <div className="filtered-header">
         Filed under <strong>{el}</strong>
-      </div><p className="line">&nbsp;</p>
+      </div>
+      <p className="line">&nbsp;</p>
       <ul className="filtered-list">
         {filteredProject.map((project, idx) => (
-          <Link to={`/project/${project.name}`} className="filtered-link" key={idx}>
+          <Link
+            to={`/project/${project.name}`}
+            className="filtered-link"
+            key={idx}
+          >
             <li>{project.name}</li>
           </Link>
         ))}
-        
       </ul>
       <p className="line">&nbsp;</p>
-      {/* <Footer /> */}
     </div>
   );
 }

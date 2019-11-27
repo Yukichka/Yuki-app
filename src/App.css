@@ -460,3 +460,8 @@ html {
   color: inherit;
   text-decoration: none;
 }
+@media (max-width: 500px) {
+  .search-input {
+    position: fixed;
+  }
+}
