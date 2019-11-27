@@ -51,6 +51,7 @@ export class Search extends React.Component {
         if (this.state.query && this.state.query.length > 0) {
           this.getInfo(this.state.query);
         } else if (!this.state.query) {
+          this.setState({ results: [] });
         }
       }
     );
