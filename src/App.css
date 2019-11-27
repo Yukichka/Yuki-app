@@ -428,13 +428,18 @@ html {
 }
 .search-input {
   width: 130px;
-  padding: 10px;
+  padding: 10px 5px;
   box-sizing: border-box;
   border: none;
   border-radius: 0;
   border-bottom: 1px solid black;
   background-color: #e8fff1;
   outline: none;
+}
+.input-nohit {
+  font-size: 0.65em;
+  color: grey;
+  padding: 0.5em;
 }
 .link-list {
   color: inherit;
@@ -459,4 +464,7 @@ html {
 .filtered-link {
   color: inherit;
   text-decoration: none;
+}
+.filtered-link:hover {
+  font-weight: bold;
 }
