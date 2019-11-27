@@ -75,7 +75,7 @@ html {
   letter-spacing: 1px;
   font-size: 1em;
   color: inherit;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .nav-link:after {
@@ -112,9 +112,9 @@ html {
 .each-project {
   margin: 0 2em 4.15em 2em;
 }
-.link-project{
+.link-project {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
 }
 .each-project-img {
   width: 650px;
@@ -149,6 +149,12 @@ html {
     margin: 1.25em 1.5em;
   }
 }
+@media (max-width: 750px) {
+  .home-content {
+    margin: 2em 1.5em;
+  }
+}
+
 @media (max-width: 500px) {
   .home {
     margin: 7em auto;
@@ -180,9 +186,9 @@ html {
   color: inherit;
   text-decoration: none;
 }
-.footer-link span{
-text-decoration: underline;
-text-underline-position: under;
+.footer-link span {
+  text-decoration: underline;
+  text-underline-position: under;
 }
 /*-------------------about-------------------*/
 .about {
@@ -204,6 +210,12 @@ text-underline-position: under;
     width: 400px;
   }
 }
+@media (max-width: 750px) {
+  .about-header {
+    margin: 6.5em 2.5em 2.5em 2.5em;
+  }
+}
+
 @media (max-width: 500px) {
   .about {
     margin: 7em auto;
@@ -411,12 +423,12 @@ text-underline-position: under;
   font-size: 0.75em;
   text-align: left;
   padding-left: 1.75em;
-  margin:0em;
+  margin: 0em;
   background-color: #fdfdfd;
 }
 .search-input {
-  width: 135px;
-  padding: 10px 20px;
+  width: 130px;
+  padding: 10px;
   box-sizing: border-box;
   border: none;
   border-radius: 0;

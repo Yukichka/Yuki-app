@@ -26,7 +26,7 @@ export function Project() {
             className="project-url"
           >{`${projectInfo.url}`}</a>
         </div>
-        {`${projectInfo.github}` != "" ? (
+        {`${projectInfo.github}` !== "" ? (
           <a
             href={`${projectInfo.github}`}
             target="_blank"
