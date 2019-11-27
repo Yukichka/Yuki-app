@@ -9,7 +9,7 @@ html {
 }
 @media (max-width: 500px) {
   .app {
-    font-size: 0.9em;
+    font-size: 1em;
   }
 }
 .line {
