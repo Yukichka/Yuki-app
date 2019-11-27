@@ -73,7 +73,7 @@ export class Search extends React.Component {
           <Suggestions
             results={this.state.results}
             className="search-results"
-            onDelete={() => this.deleteInput(this.state.query)}
+            onDelete={() => this.deleteInput()}
           />
         </form>
       </div>
