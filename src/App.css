@@ -9,7 +9,7 @@ html {
 }
 @media (max-width: 500px) {
   .app {
-    font-size: 0.75em;
+    font-size: 0.9em;
   }
 }
 .line {
@@ -460,8 +460,4 @@ html {
   color: inherit;
   text-decoration: none;
 }
-@media (max-width: 500px) {
-  .search-input {
-    position: fixed;
-  }
-}
+
