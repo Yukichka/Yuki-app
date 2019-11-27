@@ -75,6 +75,7 @@ html {
   letter-spacing: 1px;
   font-size: 1em;
   color: inherit;
+  cursor: pointer
 }
 
 .nav-link:after {

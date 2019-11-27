@@ -72,13 +72,13 @@ class HeaderImpl extends React.Component {
               </li>
               <li className="nav-list-item">
                 {this.state.isSearchOpen ? (
-                  <Link to="" className="nav-link" onClick={this.closeSearch}>
+                  <div className="nav-link" onClick={this.closeSearch}>
                     Search
-                  </Link>
+                  </div>
                 ) : (
-                  <Link to="" className="nav-link" onClick={this.openSearch}>
+                  <div to="" className="nav-link" onClick={this.openSearch}>
                     Search
-                  </Link>
+                  </div>
                 )}
               </li>
             </ul>
@@ -103,9 +103,9 @@ class HeaderImpl extends React.Component {
               About
             </Link>
             <p className="line">&nbsp;</p>
-            <Link to="" onClick={this.openMobileSearch}>
+            <div onClick={this.openMobileSearch}>
               Search
-            </Link>
+            </div>
           </div>
           <div id="mobile-search">
             <Search />

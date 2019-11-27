@@ -4,17 +4,16 @@ import { Footer } from "./Footer";
 import { allProjects } from "./Dataset";
 import { Link } from "react-router-dom";
 
-
 export class Home extends React.Component {
   constructor(props) {
     super(props);
     this.getProjectInfo = this.getProjectInfo.bind(this);
-    this.state = {project:""}
+    this.state = { project: "" };
   }
 
   getProjectInfo(project) {
     const clickedProject = project.name;
-    this.setState({project:clickedProject})
+    this.setState({ project: clickedProject });
   }
   render() {
     return (
@@ -42,7 +41,9 @@ export class Home extends React.Component {
                   <div className="each-project-name">{`${project.name}`}</div>
                 </div>
               </Link>
-              <div className="each-project-tech">Tech:{`${project.tech}`}</div>
+              <div className="each-project-tech">
+                {`${project.tech}`}
+              </div>
             </div>
           ))}
         </div>

@@ -15,7 +15,7 @@ export function Project() {
       <Header />
       <div className="project-content">
         <div className="project-title">{`${projectInfo.name}`}</div>
-        <div>Tech:{`${projectInfo.tech}`}</div>
+        <div>Tech Stack:{`${projectInfo.tech}`}</div>
         <div>Style:{`${projectInfo.style}`}</div>
         <div>
           URL:

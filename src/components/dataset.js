@@ -1,4 +1,23 @@
 export const allProjects = [
+  // {
+  //   img: {
+  //     web: ["/imgs/gorge-web-2.png","/imgs/gorge-web.png"],
+  //     mobile: ["/imgs/gorge-mobile.png","/imgs/gorge-mobile-3.png","/imgs/gorge-mobile-2.png"],
+  //   },
+  //   name: "gorge-app",
+  //   url: "https://gorge-app.herokuapp.com/",
+  //   github: "",
+  //   tech: [
+  //     "HTML",
+  //     "CSS",
+  //     "JavaScript",
+  //     "React",
+  //     "create-react-app",
+  //     "reactstrap",
+  //     "Bootstrap"
+  //   ],
+  //   style: ["Website"]
+  // },
   {
     img: {
       web: ["/imgs/yuki-web-demo.png"],
