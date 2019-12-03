@@ -1,4 +1,26 @@
 export const allProjects = [
+  {
+    img: {
+      web: ["/imgs/pic-web.png","/imgs/pic-web-2.png"],
+      mobile: ["/imgs/pic-mobile.png","/imgs/pic-mobile2.png","/imgs/pic-mobile3.png"]
+    },
+    name: "Piclab",
+    url: "",
+    github: "https://github.com/Yukichka/piclab-app",
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "create-react-app",
+      "react-router",
+      "reactstrap",
+      "Bootstrap",
+      "redux",
+      "Firebase"
+    ],
+    style: ["Website"]
+  },
   // {
   //   img: {
   //     web: ["/imgs/gorge-web-2.png","/imgs/gorge-web.png"],
