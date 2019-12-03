@@ -42,7 +42,7 @@ export class Home extends React.Component {
                 </div>
               </Link>
               <div className="each-project-tech">
-                {`${project.tech}`}
+                {`${project.tech.join(" | ")}`}
               </div>
             </div>
           ))}
