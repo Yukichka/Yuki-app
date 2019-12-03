@@ -1,7 +1,7 @@
 export const allProjects = [
   {
     img: {
-      web: ["/imgs/pic-web.png","/imgs/pic-web-2.png"],
+      web: ["/imgs/pic-web.png","/imgs/pic-web2.png"],
       mobile: ["/imgs/pic-mobile.png","/imgs/pic-mobile2.png","/imgs/pic-mobile3.png"]
     },
     name: "Piclab",
