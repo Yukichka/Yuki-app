@@ -16,7 +16,7 @@ export const allProjects = [
       "react-router",
       "reactstrap",
       "Bootstrap",
-      "redux",
+      "Redux",
       "Firebase"
     ],
     style: ["Website"]
