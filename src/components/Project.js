@@ -16,7 +16,7 @@ export function Project() {
       <div className="project-content">
         <div className="project-title">{`${projectInfo.name}`}</div>
         <div>Tech Stack:{`${projectInfo.tech.join(" | ")}`}</div>
-        <div>Style:{`${projectInfo.style}`}</div>
+        <div>Style:{`${projectInfo.style.join(" | ")}`}</div>
         <div>
           URL:
           <a
