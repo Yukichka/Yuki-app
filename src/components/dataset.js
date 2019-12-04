@@ -5,7 +5,7 @@ export const allProjects = [
       mobile: ["/imgs/pic-mobile.png","/imgs/pic-mobile2.png","/imgs/pic-mobile3.png"]
     },
     name: "Piclab",
-    url: "",
+    url: "https://piclab-a968c.firebaseapp.com",
     github: "https://github.com/Yukichka/piclab-app",
     tech: [
       "HTML",
