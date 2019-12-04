@@ -54,7 +54,7 @@ export class About extends React.Component {
               <li>Udemy, London</li>
               <li>(React Redux Firebase)</li>
               <li>GDG Cloud London, London</li>
-              <li>(JavaScript React Firebase Crash Course)</li>
+              <li>(JavaScript React Firebase)</li>
             </ul>
             <div className="contact-me">Reach me →</div>
             <ul className="contact-me-list">
