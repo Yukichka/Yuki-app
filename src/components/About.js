@@ -33,7 +33,7 @@ export class About extends React.Component {
               <li>Unix Command Line</li>
               <li>Sublime Text</li>
               <li>VS Code</li>
-              <li>Google Maps API</li>
+              <li>REST APIs</li>
               <li>Amazon Alexa skill</li>
               <li>Mongo DB</li>
               <li>Express</li>

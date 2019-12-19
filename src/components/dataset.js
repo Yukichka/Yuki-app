@@ -1,8 +1,12 @@
 export const allProjects = [
   {
     img: {
-      web: ["/imgs/pic-web.png","/imgs/pic-web2.png"],
-      mobile: ["/imgs/pic-mobile.png","/imgs/pic-mobile2.png","/imgs/pic-mobile3.png"]
+      web: ["/imgs/pic-web.png", "/imgs/pic-web2.png"],
+      mobile: [
+        "/imgs/pic-mobile.png",
+        "/imgs/pic-mobile2.png",
+        "/imgs/pic-mobile3.png"
+      ]
     },
     name: "Piclab",
     url: "https://piclab-a968c.firebaseapp.com",
@@ -18,6 +22,28 @@ export const allProjects = [
       "Bootstrap",
       "Redux",
       "Firebase"
+    ],
+    style: ["Website"]
+  },
+  {
+    img: {
+      web: ["/imgs/quotes-web.png", "/imgs/quotes-web2.png"],
+      mobile: [
+        "/imgs/quotes-mobile.png",
+        "/imgs/quotes-mobile2.png",
+        "/imgs/quotes-mobile3.png"
+      ]
+    },
+    name: "Piclab",
+    url: "https://quotes-farm.firebaseapp.com",
+    github: "https://github.com/Yukichka/Quotes-app",
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "create-react-app",
+      "REST API"
     ],
     style: ["Website"]
   },
