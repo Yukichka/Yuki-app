@@ -34,7 +34,7 @@ export const allProjects = [
         "/imgs/quotes-mobile3.png"
       ]
     },
-    name: "Piclab",
+    name: "Quotes Farm",
     url: "https://quotes-farm.firebaseapp.com",
     github: "https://github.com/Yukichka/Quotes-app",
     tech: [
