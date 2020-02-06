@@ -21,7 +21,7 @@ export class Suggestions extends React.Component {
         <li>{el}</li>
       </Link>
     ));
-    console.log("props:", this.props.results, options);
+    // console.log("props:", this.props.results, options);
     return (
       <div>
         <ul className="suggestions-lists">{options}</ul>

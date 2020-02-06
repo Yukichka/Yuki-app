@@ -23,7 +23,7 @@ class HeaderImpl extends React.Component {
       this.closeSearch();
       this.closeMobileSearch();
       this.closeNav();
-      console.log("You changed the page to: ", location.pathname);
+      // console.log("You changed the page to: ", location.pathname);
     });
   }
   componentWillUnmount() {

@@ -13,7 +13,7 @@ export class Search extends React.Component {
   }
 
   getInfo = inputStr => {
-    console.log("getInfo, input: ", inputStr);
+    // console.log("getInfo, input: ", inputStr);
     let filtered = [];
     const inputStrLowerCase = inputStr.toLowerCase();
     allProjects.forEach(project => {
@@ -21,25 +21,25 @@ export class Search extends React.Component {
         const hasText =
           techItem.toLowerCase().indexOf(inputStrLowerCase) !== -1;
         const wasInTheList = filtered.find(el => el === techItem) !== undefined;
-        console.log(
-          "tech",
-          techItem,
-          "hasText",
-          hasText,
-          "wasInTheList",
-          wasInTheList
-        );
+        // console.log(
+        //   "tech",
+        //   techItem,
+        //   "hasText",
+        //   hasText,
+        //   "wasInTheList",
+        //   wasInTheList
+        // );
 
         if (hasText && !wasInTheList) filtered.push(techItem);
       });
     });
 
-    console.log("filtered list:", filtered);
+    // console.log("filtered list:", filtered);
 
     this.setState({
       results: filtered
     });
-    console.log(this.state.results);
+    // console.log(this.state.results);
   };
 
   handleInputChange = () => {

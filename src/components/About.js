@@ -40,6 +40,10 @@ export class About extends React.Component {
               <li>Heroku</li>
               <li>Firebase</li>
               <li>Redux</li>
+              <li>TypeScript</li>
+              <li>Storybook</li>
+              <li>styled-components</li>
+              <li>Jest</li>
             </ul>
           </Grid>
           <Grid item xs={12} sm={6} className="about-grid">
