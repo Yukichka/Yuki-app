@@ -44,6 +44,7 @@ export class About extends React.Component {
               <li>Storybook</li>
               <li>styled-components</li>
               <li>Jest</li>
+              <li>Cypress</li>
             </ul>
           </Grid>
           <Grid item xs={12} sm={6} className="about-grid">
