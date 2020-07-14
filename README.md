@@ -17,4 +17,4 @@ LinkedIn:[Yuki Inasawa](https://www.linkedin.com/in/yuki-inasawa)
 
 Github respository: [Yukichka/Yuki-app](https://github.com/Yukichka/Yuki-app)
 
-Website: [yukiinasawa.me](https://www.yukiinasawa.me)
+[Website](https://www.yukiinasawa.me)
