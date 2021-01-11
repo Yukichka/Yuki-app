@@ -1,7 +1,7 @@
-import React from "react";
-import { Header } from "./Header";
-import { Footer } from "./Footer";
-import Grid from "@material-ui/core/Grid";
+import React from 'react';
+import { Header } from './Header';
+import { Footer } from './Footer';
+import Grid from '@material-ui/core/Grid';
 
 export class About extends React.Component {
   render() {
@@ -9,9 +9,9 @@ export class About extends React.Component {
       <div className="about">
         <Header />
         <div className="about-header">
-          Hi, I'm Yuki, a self-taught JavaScript developer based in Islington,
-          London UK. I love to try new things and be amazed by the outcome. I
-          code and make coffee. I love cafe, travel and yoga.
+          Hi, I'm Yuki, a self-taught JavaScript developer based in Islington, London UK. I love to
+          try new things and be amazed by the outcome. I code and make coffee. I love cafe, travel
+          and yoga.
         </div>
 
         <Grid container spacing={0}>
@@ -81,16 +81,6 @@ export class About extends React.Component {
                   className="contact-me-link"
                 >
                   LinkedIn
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/ukinnn/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="contact-me-link"
-                >
-                  Instagram
                 </a>
               </li>
             </ul>
